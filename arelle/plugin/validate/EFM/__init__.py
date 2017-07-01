@@ -40,8 +40,8 @@ from arelle.ModelValue import qname
 from arelle.PluginManager import pluginClassMethods  # , pluginMethodsForClasses, modulePluginInfos
 from arelle.UrlUtil import authority, relativeUri
 from arelle.ValidateFilingText import referencedFiles
-from .Document import checkDTSdocument
-from .Filing import validateFiling
+from Document import checkDTSdocument
+from Filing import validateFiling
 try:
     import regex as re
 except ImportError:
