@@ -211,7 +211,7 @@ if sys.platform in ('darwin', 'linux2', 'linux', 'sunos5'):
 
     packages = find_packages(
         '.',  # note that new setuptools finds plugin and lib unwanted stuff
-        exclude=['*.plugin.*', '*.lib.*']
+        exclude=['*.lib.*']
     )
     dataFiles = []
     includeFiles = [
@@ -389,7 +389,7 @@ else:
     from setuptools import os, setup, find_packages
     packages = find_packages(
         '.', # note that new setuptools finds plugin and lib unwanted stuff
-        exclude=['*.plugin.*', '*.lib.*']
+        exclude=['*.lib.*']
     )
     dataFiles = [(
         'config',
