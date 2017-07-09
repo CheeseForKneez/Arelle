@@ -299,7 +299,7 @@ if sys.platform in ('darwin', 'linux2', 'linux', 'sunos5'):
         }
         
     
-elif sys.platform == 'win32':
+elif sys.platform == 'win32' and False:
     from setuptools import find_packages
     from cx_Freeze import setup, Executable 
     # py2exe is not ported to Python 3 yet
